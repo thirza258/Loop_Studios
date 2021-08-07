@@ -11,16 +11,16 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
+            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/image_hero"
                 android:layout_width="match_parent"
                 android:layout_height="746dp"
-                android:src="@drawable/image_hero"
                 android:scaleType="fitXY"
-                android:id="@+id/image_hero"
-                />
+                android:src="@drawable/image_hero" />
 
             <ImageView
                 android:id="@+id/logo"
@@ -46,7 +46,7 @@
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="250dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="30dp"
                 android:background="@drawable/back"
                 android:fontFamily="@font/josefinsans_variable_weight"
                 android:text="@string/immersive"
@@ -55,66 +55,65 @@
 
 
             <RelativeLayout
+                android:id="@+id/relInteractive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/image_hero"
-                android:layout_marginTop="96dp"
-                android:id="@+id/relInteractive">
+                android:layout_marginTop="96dp">
 
                 <ImageView
+                    android:id="@+id/image_interactive"
                     android:layout_width="330dp"
                     android:layout_height="222dp"
-                    android:src="@drawable/image_interactive"
-                    android:id="@+id/image_interactive"
                     android:layout_centerHorizontal="true"
-                    />
+                    android:src="@drawable/image_interactive" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/leader"
-                    android:layout_below="@id/image_interactive"
                     android:id="@+id/leader"
-                    android:layout_marginTop="50dp"
-                    android:gravity="center_horizontal"
-                    android:textSize="30sp"
-                    android:fontFamily="@font/josefinsans_variable_weight"/>
-
-                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/founded"
+                    android:layout_below="@id/image_interactive"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/josefinsans_variable_weight"
+                    android:gravity="center_horizontal"
+                    android:text="@string/leader"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/founded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_below="@id/leader"
-                    android:layout_marginTop="27dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="48dp"
-                    android:gravity="center_horizontal"
+                    android:layout_marginTop="27dp"
                     android:fontFamily="@font/alata_regular"
-                    />
+                    android:gravity="center_horizontal"
+                    android:text="@string/founded" />
 
             </RelativeLayout>
 
             <TextView
+                android:id="@+id/creation"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/creation"
                 android:layout_below="@+id/relInteractive"
-                android:id="@+id/creation"
                 android:layout_centerHorizontal="true"
-                android:textSize="30sp"
-                android:gravity="center_horizontal"
                 android:layout_marginTop="100dp"
                 android:fontFamily="@font/josefinsans_variable_weight"
-                />
+                android:gravity="center_horizontal"
+                android:text="@string/creation"
+                android:textSize="30sp" />
 
             <LinearLayout
+                android:id="@+id/linear1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_below="@id/creation"
-                android:id="@+id/linear1">
+                android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/relDeepEarth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -123,26 +122,26 @@
                         android:id="@+id/image_deep_earth"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_deep_earth"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_deep_earth" />
 
                     <TextView
+                        android:id="@+id/deep_earth"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/deep_earth"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/deep_earth"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relNightArcade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -151,26 +150,26 @@
                         android:id="@+id/image_night_arcade"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_night_arcade"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_night_arcade" />
 
                     <TextView
+                        android:id="@+id/night_arcade"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/night"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/night"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relSoccerTeam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -179,26 +178,26 @@
                         android:id="@+id/image_soccer_team"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_soccer_team"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_soccer_team" />
 
                     <TextView
+                        android:id="@+id/soccer_team"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/soccer"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/soccer"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relGrid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -207,26 +206,26 @@
                         android:id="@+id/image_grid"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_grid"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_grid" />
 
                     <TextView
+                        android:id="@+id/grid"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/grid"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/grid"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relAbove"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -235,26 +234,26 @@
                         android:id="@+id/image_from_above"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_from_above"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_from_above" />
 
                     <TextView
+                        android:id="@+id/above"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/above"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/above"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relBorealis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -263,26 +262,26 @@
                         android:id="@+id/image_pocket_borealis"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_pocket_borealis"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_pocket_borealis" />
 
                     <TextView
+                        android:id="@+id/borealis"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/borealis"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/borealis"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relCuriosity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -291,26 +290,26 @@
                         android:id="@+id/image_curiosity"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_curiosity"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_curiosity" />
 
                     <TextView
+                        android:id="@+id/curiosity"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/curiosity"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/curiosity"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/relFisheye"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -319,174 +318,172 @@
                         android:id="@+id/image_fisheye"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:src="@drawable/image_fisheye"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        />
+                        android:src="@drawable/image_fisheye" />
 
                     <TextView
+                        android:id="@+id/fisheye"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/fisheye"
+                        android:layout_marginLeft="49dp"
                         android:layout_marginTop="70dp"
                         android:elevation="120dp"
-                        android:textColor="@color/white"
                         android:fontFamily="@font/josefinsans_variable_weight"
-                        android:textSize="21sp"
-                        android:layout_marginLeft="49dp"
-                        />
+                        android:text="@string/fisheye"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
 
                 </RelativeLayout>
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/see_all"
                 android:layout_width="157dp"
                 android:layout_height="wrap_content"
-                android:text="SEE ALL"
                 android:layout_below="@+id/linear1"
                 android:layout_centerHorizontal="true"
-                android:gravity="center_horizontal"
-                android:background="@drawable/backblack"
-                android:textSize="15sp"
-                android:fontFamily="@font/josefinsans_variable_weight"
                 android:layout_marginTop="34dp"
+                android:background="@drawable/backblack"
+                android:fontFamily="@font/josefinsans_variable_weight"
+                android:gravity="center_horizontal"
+                android:text="SEE ALL"
                 android:textColor="@color/black"
-                android:id="@+id/see_all"
-                />
+                android:textSize="15sp" />
 
             <RelativeLayout
+                android:id="@+id/relFooter"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/relFooter"
                 android:layout_below="@id/see_all"
                 android:layout_marginTop="100dp">
 
                 <ImageView
+                    android:id="@+id/bgBlack"
                     android:layout_width="match_parent"
                     android:layout_height="650dp"
-                    android:background="@color/black"
-                    android:id="@+id/bgBlack"
-                    />
+                    android:background="@color/black" />
 
                 <ImageView
+                    android:id="@+id/logo2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/logo"
-                    android:id="@+id/logo2"
-                    android:layout_marginTop="58dp"/>
+                    android:layout_marginTop="58dp"
+                    android:src="@drawable/logo" />
 
                 <LinearLayout
+                    android:id="@+id/linear2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal"
-                    android:layout_centerHorizontal="true"
                     android:layout_below="@+id/logo2"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="68dp"
-                    android:id="@+id/linear2">
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/about"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/alata_regular"
                         android:text="About"
-                        android:fontFamily="@font/alata_regular"
-                        android:textSize="26sp"
                         android:textColor="@color/white"
-                        />
+                        android:textSize="26sp" />
 
                     <TextView
+                        android:id="@+id/careers"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/alata_regular"
                         android:text="Careers"
-                        android:fontFamily="@font/alata_regular"
-                        android:textSize="26sp"
                         android:textColor="@color/white"
-                        />
+                        android:textSize="26sp" />
 
                     <TextView
+                        android:id="@+id/events"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/alata_regular"
                         android:text="Events"
-                        android:fontFamily="@font/alata_regular"
-                        android:textSize="26sp"
                         android:textColor="@color/white"
-                        />
+                        android:textSize="26sp" />
 
                     <TextView
+                        android:id="@+id/products"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/alata_regular"
                         android:text="Products"
-                        android:fontFamily="@font/alata_regular"
-                        android:textSize="26sp"
                         android:textColor="@color/white"
-                        />
+                        android:textSize="26sp" />
 
                     <TextView
+                        android:id="@+id/support"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Support"
                         android:fontFamily="@font/alata_regular"
-                        android:textSize="26sp"
+                        android:text="Support"
                         android:textColor="@color/white"
-                        />
+                        android:textSize="26sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
                     android:layout_below="@+id/linear2"
                     android:layout_marginTop="80dp"
                     android:gravity="center_horizontal"
-                    android:id="@+id/linear3">
+                    android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/facebook"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/icon_facebook"
-                        android:background="@color/black"/>
-
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/icon_twitter"
                         android:background="@color/black"
-                        android:layout_marginLeft="24dp"/>
+                        android:src="@drawable/icon_facebook" />
 
                     <ImageButton
+                        android:id="@+id/twitter"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/icon_pinterest"
+                        android:layout_marginLeft="24dp"
                         android:background="@color/black"
-                        android:layout_marginLeft="24dp"/>
+                        android:src="@drawable/icon_twitter" />
 
                     <ImageButton
+                        android:id="@+id/pinterest"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/icon_instagram"
+                        android:layout_marginLeft="24dp"
                         android:background="@color/black"
-                        android:layout_marginLeft="24dp"/>
+                        android:src="@drawable/icon_pinterest" />
+
+                    <ImageButton
+                        android:id="@+id/instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:background="@color/black"
+                        android:src="@drawable/icon_instagram" />
 
 
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/license"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/linear3"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
                     android:gravity="center_horizontal"
                     android:text="@string/license"
-                    android:textColor="@color/white"
-                    android:layout_below="@id/linear3"
-                    android:layout_marginTop="27dp"/>
+                    android:textColor="@color/white" />
 
             </RelativeLayout>
-
-
-
-
 
 
         </RelativeLayout>
