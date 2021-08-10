@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout relativeLayout, relInteractive, relDeepEarth;
     private RelativeLayout relNightArcade, relSoccerTeam, relGrid, relAbove;
     private RelativeLayout relBorealis, relFisheye, relFooter;
-    private LinearLayout linear1, linear2, linear3;
+    private LinearLayout linear1, linear2, linear3, linear4, linear5, linear6, linear7, linear8;
     private ImageButton icon_hamburger, facebook, twitter, pinterest, instagram;
     private ImageView image_hero, logo, image_interactive, image_deep_earth;
     private ImageView image_night_arcade, image_soccer_team, image_grid, image_from_above;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView immersive, leader, founded, deep_earth, night_arcade;
     private TextView soccer_team, grid, borealis, above, curiosity, fisheye;
     private TextView about, careers, events, products, support, license;
+    private TextView aboutFooter, careersFooter, eventsFooter, supportFooter, productFooter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +91,16 @@ public class MainActivity extends AppCompatActivity {
         products = findViewById(R.id.products);
         support = findViewById(R.id.support);
         license = findViewById(R.id.license);
+        linear4 = findViewById(R.id.linear4);
+        linear5 = findViewById(R.id.linear5);
+        linear6 = findViewById(R.id.linear6);
+        linear7 = findViewById(R.id.linear7);
+        linear8 = findViewById(R.id.linear8);
+        aboutFooter = findViewById(R.id.aboutFooter);
+        careersFooter = findViewById(R.id.careersFooter);
+        productFooter = findViewById(R.id.productsFooter);
+        eventsFooter = findViewById(R.id.eventsFooter);
+        supportFooter = findViewById(R.id.supportFooter);
 
     }
 }
