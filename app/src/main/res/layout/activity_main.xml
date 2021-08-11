@@ -336,6 +336,239 @@
 
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:id="@+id/relaot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_aot"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aot" />
+
+                    <TextView
+                        android:id="@+id/aot"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/anime"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reldate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/date_a_live" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/date"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relbeach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_beach"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/beach" />
+
+                    <TextView
+                        android:id="@+id/beach"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/beach"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relburger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_burger"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hamburger" />
+
+                    <TextView
+                        android:id="@+id/burger"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/burger"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relcoca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_coca"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coca_cola" />
+
+                    <TextView
+                        android:id="@+id/coca"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/coca"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relgradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gradient" />
+
+                    <TextView
+                        android:id="@+id/gradient"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/gradient"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relnoragami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_noragami"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/noragami" />
+
+                    <TextView
+                        android:id="@+id/noragami"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/noragami"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relsao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+
+                    <ImageView
+                        android:id="@+id/image_sao"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sword_art_online" />
+
+                    <TextView
+                        android:id="@+id/sao"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginTop="70dp"
+                        android:elevation="120dp"
+                        android:fontFamily="@font/josefinsans_variable_weight"
+                        android:text="@string/sao"
+                        android:textColor="@color/white"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+
             </LinearLayout>
 
             <Button
@@ -352,6 +585,7 @@
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:visibility="visible"
                 />
 
             <RelativeLayout
