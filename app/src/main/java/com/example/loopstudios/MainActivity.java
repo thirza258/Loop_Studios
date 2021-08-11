@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RelativeLayout relativeLayout, relInteractive, relDeepEarth;
     private RelativeLayout relNightArcade, relSoccerTeam, relGrid, relAbove;
-    private RelativeLayout relBorealis, relFisheye, relFooter;
+    private RelativeLayout relBorealis, relFisheye, relFooter, relCuriosity;
     private LinearLayout linear1, linear2, linear3, linear4, linear5, linear6, linear7, linear8;
     private ImageButton icon_hamburger, facebook, twitter, pinterest, instagram;
     private ImageView image_hero, logo, image_interactive, image_deep_earth;
@@ -35,6 +36,54 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initView();
+        userinterface();
+
+
+        relDeepEarth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        relCuriosity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        relNightArcade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        relFisheye.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        relBorealis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        relSoccerTeam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+
+
 
 
     }
@@ -48,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
         relNightArcade = findViewById(R.id.relNightArcade);
         relSoccerTeam = findViewById(R.id.relSoccerTeam);
         relGrid = findViewById(R.id.relGrid);
+        relCuriosity = findViewById(R.id.relCuriosity);
         relAbove = findViewById(R.id.relAbove);
         relBorealis = findViewById(R.id.relBorealis);
         relFisheye = findViewById(R.id.relFisheye);
@@ -102,5 +152,91 @@ public class MainActivity extends AppCompatActivity {
         eventsFooter = findViewById(R.id.eventsFooter);
         supportFooter = findViewById(R.id.supportFooter);
 
+    }
+
+    public void userinterface() {
+        icon_hamburger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        see_all.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        aboutFooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        support.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        supportFooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        products.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        productFooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        careers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        careersFooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        eventsFooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
