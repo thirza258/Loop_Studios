@@ -3,6 +3,7 @@ package com.example.loopstudios;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
@@ -43,10 +44,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         initView();
         userinterface();
-
+        //TODO: bug on landscape
 
         relDeepEarth.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,38 +183,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onConfigurationChanged(Configuration configuration) {
-        super.onConfigurationChanged(configuration);
 
-        if(configuration.orientation == Configuration.ORIENTATION_LANDSCAPE){
-            see_all.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    see_all.setVisibility(View.GONE);
-                    linear10.setVisibility(View.VISIBLE);
-                    linear11.setVisibility(View.VISIBLE);
-                }
-            });
-
-        }
-        else {
-            see_all.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    see_all.setVisibility(View.GONE);
-                    relaot.setVisibility(View.VISIBLE);
-                    relbeach.setVisibility(View.VISIBLE);
-                    reldate.setVisibility(View.VISIBLE);
-                    relnoragami.setVisibility(View.VISIBLE);
-                    relsao.setVisibility(View.VISIBLE);
-                    relgradient.setVisibility(View.VISIBLE);
-                    relcoca.setVisibility(View.VISIBLE);
-                    relburger.setVisibility(View.VISIBLE);
-                }
-            });
-        }
-
-    }
 
 
 
