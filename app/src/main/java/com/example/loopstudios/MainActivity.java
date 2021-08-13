@@ -3,16 +3,22 @@ package com.example.loopstudios;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
+import android.app.ActionBar;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.OrientationEventListener;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -25,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private RelativeLayout relaot, reldate, relbeach, relburger, relcoca;
     private RelativeLayout relgradient, relnoragami, relsao;
     private LinearLayout linear1, linear2, linear3, linear4, linear5, linear6, linear7, linear8, linear9, linear10, linear11;
-    private ImageButton icon_hamburger, facebook, twitter, pinterest, instagram;
+    private ImageButton icon_hamburger, facebook, twitter, pinterest, instagram, arrow_up;
     private ImageView image_hero, logo, image_interactive, image_deep_earth;
     private ImageView image_night_arcade, image_soccer_team, image_grid, image_from_above;
     private ImageView image_pocket_borealis, image_curiosity, image_fisheye;
@@ -39,63 +45,35 @@ public class MainActivity extends AppCompatActivity {
     private TextView aboutFooter, careersFooter, eventsFooter, supportFooter, productFooter;
     private TextView aot, date, beach, burger, coca;
     private TextView gradient, noragami, sao;
+    private Menu option_1, option_2, option_3, option_4, option_5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
+        decorView.setSystemUiVisibility(uiOptions);
 
         initView();
-        userinterface();
         //TODO: bug on landscape
 
-        relDeepEarth.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        relCuriosity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        relNightArcade.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        relFisheye.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        relBorealis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        relSoccerTeam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         icon_hamburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                PopupMenu menu = new PopupMenu(MainActivity.this, icon_hamburger);
+                menu.getMenuInflater().inflate(R.menu.dropdown, menu.getMenu());
 
+                menu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        return false;
+                    }
+                });
+
+                menu.show();
             }
         });
 
@@ -105,86 +83,39 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG, "onClick: Started");
 
-
-
+                see_all.setVisibility(View.GONE);
+                relaot.setVisibility(View.VISIBLE);
+                relbeach.setVisibility(View.VISIBLE);
+                reldate.setVisibility(View.VISIBLE);
+                relnoragami.setVisibility(View.VISIBLE);
+                relsao.setVisibility(View.VISIBLE);
+                relgradient.setVisibility(View.VISIBLE);
+                relcoca.setVisibility(View.VISIBLE);
+                relburger.setVisibility(View.VISIBLE);
+                arrow_up.setVisibility(View.VISIBLE);
             }
         });
 
-        about.setOnClickListener(new View.OnClickListener() {
+        arrow_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "onClick: Started");
 
+                see_all.setVisibility(View.VISIBLE);
+                relaot.setVisibility(View.GONE);
+                relbeach.setVisibility(View.GONE);
+                reldate.setVisibility(View.GONE);
+                relnoragami.setVisibility(View.GONE);
+                relsao.setVisibility(View.GONE);
+                relgradient.setVisibility(View.GONE);
+                relcoca.setVisibility(View.GONE);
+                relburger.setVisibility(View.GONE);
+                arrow_up.setVisibility(View.GONE);
             }
         });
 
 
-        support.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-
-        products.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-
-        careers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        View view = getWindow().getDecorView();
-        int orientation = getResources().getConfiguration().orientation;
-        if (Configuration.ORIENTATION_LANDSCAPE == orientation) {
-            //Do SomeThing; // Landscape
-            see_all.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    see_all.setVisibility(View.GONE);
-                    linear10.setVisibility(View.VISIBLE);
-                    linear11.setVisibility(View.VISIBLE);
-                }
-            });
-        } else {
-            //Do SomeThing;  // Portrait
-            see_all.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    see_all.setVisibility(View.GONE);
-                    relaot.setVisibility(View.VISIBLE);
-                    relbeach.setVisibility(View.VISIBLE);
-                    reldate.setVisibility(View.VISIBLE);
-                    relnoragami.setVisibility(View.VISIBLE);
-                    relsao.setVisibility(View.VISIBLE);
-                    relgradient.setVisibility(View.VISIBLE);
-                    relcoca.setVisibility(View.VISIBLE);
-                    relburger.setVisibility(View.VISIBLE);
-                }
-            });
-        }
     }
-
-
-
 
 
     public void initView() {
@@ -277,12 +208,13 @@ public class MainActivity extends AppCompatActivity {
         linear9 = findViewById(R.id.linear9);
         linear10 = findViewById(R.id.linear10);
         linear11 = findViewById(R.id.linear11);
+        option_1 = findViewById(R.id.option_1);
+        option_2 = findViewById(R.id.option_2);
+        option_3 = findViewById(R.id.option_3);
+        option_4 = findViewById(R.id.option_4);
+        option_5 = findViewById(R.id.option_5);
+        arrow_up = findViewById(R.id.arrow_up);
 
     }
 
-    public void userinterface() {
-
-
-
-    }
 }
