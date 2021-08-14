@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoopStudios">
-        <activity android:name=".aot"></activity>
+        <activity android:name=".hamburger.About"></activity>
+        <activity android:name=".listActivity.noragami" />
+        <activity android:name=".listActivity.colorful" />
+        <activity android:name=".listActivity.date" />
+        <activity android:name=".listActivity.curiosity" />
+        <activity android:name=".listActivity.borealis" />
+        <activity android:name=".listActivity.vr" />
+        <activity android:name=".listActivity.grid" />
+        <activity android:name=".listActivity.soccer" />
+        <activity android:name=".listActivity.arcade" />
+        <activity android:name=".listActivity.earth" />
+        <activity android:name=".listActivity.coca" />
+        <activity android:name=".listActivity.sao" />
+        <activity android:name=".listActivity.gradient" />
+        <activity android:name=".listActivity.aot" />
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">

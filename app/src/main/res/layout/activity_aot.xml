@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".aot"
+    tools:context=".listActivity.aot"
     android:fitsSystemWindows="true">
 
     <ScrollView
@@ -43,7 +43,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="50dp"
-                android:text="long desc here"
+                android:text="@string/aot"
                 android:id="@+id/long_desc"
                 android:fontFamily="@font/alata_regular"/>
 

@@ -580,7 +580,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:visibility="gone"
-                android:id="@+id/arrow_up"/>
+                android:id="@+id/arrow_up"
+                android:background="@color/white"/>
 
             <Button
                 android:id="@+id/see_all"
