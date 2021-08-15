@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Build;
@@ -21,6 +22,13 @@ import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.loopstudios.listActivity.aot;
+import com.example.loopstudios.listActivity.arcade;
+import com.example.loopstudios.socialMedia.Facebook;
+import com.example.loopstudios.socialMedia.Instagram;
+import com.example.loopstudios.socialMedia.Pinterest;
+import com.example.loopstudios.socialMedia.Twitter;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -57,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
 
         initView();
+        socialmedia();
         //TODO: bug on landscape
 
 
@@ -115,6 +124,56 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+        relaot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.aot.class);
+                startActivity(intent);
+            }
+        });
+
+        relNightArcade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, arcade.class);
+            }
+        });
+
+
+    }
+    public void socialmedia() {
+        pinterest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Pinterest.class);
+                startActivity(intent);
+            }
+        });
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Facebook.class);
+                startActivity(intent);
+            }
+        });
+
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Twitter.class);
+                startActivity(intent);
+            }
+        });
+
+        instagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Instagram.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

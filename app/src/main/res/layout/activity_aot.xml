@@ -45,7 +45,8 @@
                 android:layout_marginBottom="50dp"
                 android:text="@string/aot"
                 android:id="@+id/long_desc"
-                android:fontFamily="@font/alata_regular"/>
+                android:fontFamily="@font/alata_regular"
+                android:gravity="center_vertical"/>
 
         </RelativeLayout>
 

@@ -7,14 +7,12 @@ import android.os.Bundle;
 
 import com.example.loopstudios.R;
 
-public class arcade extends AppCompatActivity {
+public class soccer extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aot);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-
     }
 }
