@@ -125,7 +125,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_deep_earth" />
+                        android:src="@drawable/image_deep_earth"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_deep_earth_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_deep_earth"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/deep_earth"
@@ -153,7 +162,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_night_arcade" />
+                        android:src="@drawable/image_night_arcade"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_night_arcade_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_night_arcade"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/night_arcade"
@@ -181,7 +199,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_soccer_team" />
+                        android:src="@drawable/image_soccer_team"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_soccer_team_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_soccer_team"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/soccer_team"
@@ -209,7 +236,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_grid" />
+                        android:src="@drawable/image_grid"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_grid_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_grid"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/grid"
@@ -237,7 +273,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_from_above" />
+                        android:src="@drawable/image_from_above"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_from_above_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_from_above"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/above"
@@ -265,7 +310,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_pocket_borealis" />
+                        android:src="@drawable/image_pocket_borealis"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_pocket_borealis_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_pocket_borealis"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/borealis"
@@ -293,7 +347,17 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_curiosity" />
+                        android:src="@drawable/image_curiosity"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_curiosity_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:layout_margin="22dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_curiosity"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/curiosity"
@@ -321,7 +385,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/image_fisheye" />
+                        android:src="@drawable/image_fisheye"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_fisheye_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image_fisheye"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/fisheye"
@@ -350,7 +423,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/aot" />
+                        android:src="@drawable/aot"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_aot_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/aot"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/aot"
@@ -379,7 +461,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/date_a_live" />
+                        android:src="@drawable/date_a_live"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_date_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/date_a_live"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/date"
@@ -408,7 +499,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/beach" />
+                        android:src="@drawable/beach"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_beach_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/beach"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/beach"
@@ -437,7 +537,17 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/hamburger" />
+                        android:src="@drawable/hamburger"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_burger_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hamburger"
+                        android:visibility="gone"
+                        />
 
                     <TextView
                         android:id="@+id/burger"
@@ -466,7 +576,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/coca_cola" />
+                        android:src="@drawable/coca_cola"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_coca_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coca_cola"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/coca"
@@ -495,7 +614,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/gradient" />
+                        android:src="@drawable/gradient"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_gradient_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gradient"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/gradient"
@@ -524,7 +652,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/noragami" />
+                        android:src="@drawable/noragami"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_noragami_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/noragami"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/noragami"
@@ -553,7 +690,16 @@
                         android:layout_height="116dp"
                         android:layout_margin="22dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/sword_art_online" />
+                        android:src="@drawable/sword_art_online"
+                        android:visibility="visible"/>
+
+                    <ImageView
+                        android:id="@+id/image_sao_after"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sword_art_online"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/sao"
@@ -578,7 +724,7 @@
                 android:src="@drawable/ic_action_name"
                 android:layout_below="@+id/linear1"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:visibility="gone"
                 android:id="@+id/arrow_up"
                 android:background="@color/white"/>
@@ -592,11 +738,10 @@
                 android:layout_marginTop="34dp"
                 android:background="@drawable/backblack"
                 android:fontFamily="@font/josefinsans_variable_weight"
-                android:gravity="center_horizontal"
+                android:gravity="center"
                 android:text="SEE ALL"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:visibility="visible"
                 />
 

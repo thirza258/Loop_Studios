@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView aot, date, beach, burger, coca;
     private TextView gradient, noragami, sao;
     private Menu option_1, option_2, option_3, option_4, option_5;
+    private ImageView image_deep_earth_after, image_pocket_borealis_after, image_night_arcade_after, image_soccer_team_after;
+    private ImageView image_grid_after, image_from_above_after, image_curiosity_after, image_fisheye_after;
+    private ImageView image_date_after, image_aot_after, image_beach_after, image_burger_after;
+    private ImageView image_coca_after, image_gradient_after, image_noragami_after, image_sao_after;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,9 +70,205 @@ public class MainActivity extends AppCompatActivity {
 
         initView();
         socialmedia();
+        setRelativeLayout();
+        hamburger();
         //TODO: bug on landscape
 
 
+    }
+
+
+    public void socialmedia() {
+        pinterest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Pinterest.class);
+                startActivity(intent);
+            }
+        });
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Facebook.class);
+                startActivity(intent);
+            }
+        });
+
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Twitter.class);
+                startActivity(intent);
+            }
+        });
+
+        instagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Instagram.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    public void setRelativeLayout() {
+        Log.d(TAG, "setRelativeLayout: Started");
+
+        relDeepEarth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_deep_earth.setVisibility(View.GONE);
+                image_deep_earth_after.setVisibility(View.VISIBLE);
+                image_deep_earth_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.earth.class);
+                        startActivity(intent);
+                    }
+                });
+            }
+        });
+
+        relaot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_aot.setVisibility(View.GONE);
+                image_aot_after.setVisibility(View.VISIBLE);
+                image_aot_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.aot.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+        });
+
+        relNightArcade.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_night_arcade.setVisibility(View.GONE);
+                image_night_arcade_after.setVisibility(View.VISIBLE);
+                image_night_arcade_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.arcade.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+        });
+
+        relsao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_sao.setVisibility(View.GONE);
+                image_sao_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relnoragami.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_noragami.setVisibility(View.GONE);
+                image_noragami_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relgradient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_gradient.setVisibility(View.GONE);
+                image_gradient_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relcoca.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_coca.setVisibility(View.GONE);
+                image_coca_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relburger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_burger.setVisibility(View.GONE);
+                image_burger_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relbeach.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_beach.setVisibility(View.GONE);
+                image_beach_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        reldate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_date.setVisibility(View.GONE);
+                image_date_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relSoccerTeam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_soccer_team.setVisibility(View.GONE);
+                image_soccer_team_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relBorealis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_pocket_borealis.setVisibility(View.GONE);
+                image_pocket_borealis_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relFisheye.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_fisheye.setVisibility(View.GONE);
+                image_fisheye_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relCuriosity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_curiosity.setVisibility(View.GONE);
+                image_curiosity_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relAbove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_from_above.setVisibility(View.GONE);
+                image_from_above_after.setVisibility(View.VISIBLE);
+            }
+        });
+
+        relGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                image_grid.setVisibility(View.GONE);
+                image_grid_after.setVisibility(View.VISIBLE);
+            }
+        });
+    }
+
+    public void hamburger() {
         icon_hamburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,58 +320,6 @@ public class MainActivity extends AppCompatActivity {
                 relcoca.setVisibility(View.GONE);
                 relburger.setVisibility(View.GONE);
                 arrow_up.setVisibility(View.GONE);
-            }
-        });
-
-
-
-        relaot.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.aot.class);
-                startActivity(intent);
-            }
-        });
-
-        relNightArcade.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, arcade.class);
-            }
-        });
-
-
-    }
-    public void socialmedia() {
-        pinterest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Pinterest.class);
-                startActivity(intent);
-            }
-        });
-
-        facebook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Facebook.class);
-                startActivity(intent);
-            }
-        });
-
-        twitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Twitter.class);
-                startActivity(intent);
-            }
-        });
-
-        instagram.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Instagram.class);
-                startActivity(intent);
             }
         });
     }
@@ -273,6 +421,22 @@ public class MainActivity extends AppCompatActivity {
         option_4 = findViewById(R.id.option_4);
         option_5 = findViewById(R.id.option_5);
         arrow_up = findViewById(R.id.arrow_up);
+        image_deep_earth_after = findViewById(R.id.image_deep_earth_after);
+        image_pocket_borealis_after = findViewById(R.id.image_pocket_borealis_after);
+        image_night_arcade_after = findViewById(R.id.image_night_arcade_after);
+        image_soccer_team_after = findViewById(R.id.image_soccer_team_after);
+        image_grid_after = findViewById(R.id.image_grid_after);
+        image_from_above_after = findViewById(R.id.image_from_above_after);
+        image_curiosity_after = findViewById(R.id.image_curiosity_after);
+        image_fisheye_after = findViewById(R.id.image_fisheye_after);
+        image_date_after = findViewById(R.id.image_date_after);
+        image_aot_after = findViewById(R.id.image_aot_after);
+        image_beach_after = findViewById(R.id.image_beach_after);
+        image_burger_after = findViewById(R.id.image_burger_after);
+        image_coca_after = findViewById(R.id.image_coca_after);
+        image_gradient_after = findViewById(R.id.image_gradient_after);
+        image_noragami_after = findViewById(R.id.image_noragami_after);
+        image_sao_after = findViewById(R.id.image_sao_after);
 
     }
 
