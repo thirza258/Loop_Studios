@@ -354,7 +354,6 @@
                         android:id="@+id/image_curiosity_after"
                         android:layout_width="match_parent"
                         android:layout_height="116dp"
-                        android:layout_margin="22dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/image_curiosity"
                         android:visibility="gone"/>

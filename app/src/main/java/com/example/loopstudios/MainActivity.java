@@ -23,8 +23,20 @@ import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.loopstudios.listActivity.above;
 import com.example.loopstudios.listActivity.aot;
 import com.example.loopstudios.listActivity.arcade;
+import com.example.loopstudios.listActivity.beach;
+import com.example.loopstudios.listActivity.borealis;
+import com.example.loopstudios.listActivity.burger;
+import com.example.loopstudios.listActivity.coca;
+import com.example.loopstudios.listActivity.curiosity;
+import com.example.loopstudios.listActivity.date;
+import com.example.loopstudios.listActivity.fisheye;
+import com.example.loopstudios.listActivity.gradient;
+import com.example.loopstudios.listActivity.noragami;
+import com.example.loopstudios.listActivity.sao;
+import com.example.loopstudios.listActivity.soccer;
 import com.example.loopstudios.socialMedia.Facebook;
 import com.example.loopstudios.socialMedia.Instagram;
 import com.example.loopstudios.socialMedia.Pinterest;
@@ -124,8 +136,11 @@ public class MainActivity extends AppCompatActivity {
                 image_deep_earth_after.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        image_deep_earth.setVisibility(View.VISIBLE);
+                        image_deep_earth_after.setVisibility(View.GONE);
                         Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.earth.class);
                         startActivity(intent);
+
                     }
                 });
             }
@@ -139,8 +154,11 @@ public class MainActivity extends AppCompatActivity {
                 image_aot_after.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        image_aot.setVisibility(View.VISIBLE);
+                        image_aot_after.setVisibility(View.GONE);
                         Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.aot.class);
                         startActivity(intent);
+
                     }
                 });
 
@@ -155,8 +173,11 @@ public class MainActivity extends AppCompatActivity {
                 image_night_arcade_after.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        image_night_arcade.setVisibility(View.VISIBLE);
+                        image_night_arcade_after.setVisibility(View.VISIBLE);
                         Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.arcade.class);
                         startActivity(intent);
+
                     }
                 });
 
@@ -168,6 +189,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_sao.setVisibility(View.GONE);
                 image_sao_after.setVisibility(View.VISIBLE);
+                image_sao_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_sao.setVisibility(View.VISIBLE);
+                        image_sao_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.sao.class);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
 
@@ -176,6 +207,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_noragami.setVisibility(View.GONE);
                 image_noragami_after.setVisibility(View.VISIBLE);
+                image_noragami_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_noragami.setVisibility(View.VISIBLE);
+                        image_noragami_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.noragami.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -184,6 +224,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_gradient.setVisibility(View.GONE);
                 image_gradient_after.setVisibility(View.VISIBLE);
+                image_gradient_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_gradient.setVisibility(View.VISIBLE);
+                        image_gradient_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.gradient.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -192,6 +241,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_coca.setVisibility(View.GONE);
                 image_coca_after.setVisibility(View.VISIBLE);
+                image_coca_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_coca.setVisibility(View.VISIBLE);
+                        image_coca_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.coca.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -200,6 +258,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_burger.setVisibility(View.GONE);
                 image_burger_after.setVisibility(View.VISIBLE);
+                image_burger_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_burger.setVisibility(View.VISIBLE);
+                        image_burger_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.burger.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -208,6 +275,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_beach.setVisibility(View.GONE);
                 image_beach_after.setVisibility(View.VISIBLE);
+                image_beach_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_beach.setVisibility(View.VISIBLE);
+                        image_beach_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.beach.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -216,6 +292,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_date.setVisibility(View.GONE);
                 image_date_after.setVisibility(View.VISIBLE);
+                image_date_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_date.setVisibility(View.VISIBLE);
+                        image_date_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.date.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -224,6 +309,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_soccer_team.setVisibility(View.GONE);
                 image_soccer_team_after.setVisibility(View.VISIBLE);
+                image_soccer_team_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_soccer_team.setVisibility(View.VISIBLE);
+                        image_soccer_team_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, soccer.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -232,6 +326,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_pocket_borealis.setVisibility(View.GONE);
                 image_pocket_borealis_after.setVisibility(View.VISIBLE);
+                image_pocket_borealis_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_pocket_borealis.setVisibility(View.VISIBLE);
+                        image_pocket_borealis_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.borealis.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -240,6 +343,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_fisheye.setVisibility(View.GONE);
                 image_fisheye_after.setVisibility(View.VISIBLE);
+                image_fisheye_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_fisheye.setVisibility(View.VISIBLE);
+                        image_fisheye_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.fisheye.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -248,6 +360,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_curiosity.setVisibility(View.GONE);
                 image_curiosity_after.setVisibility(View.VISIBLE);
+                image_curiosity_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_curiosity.setVisibility(View.VISIBLE);
+                        image_curiosity_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.curiosity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -256,6 +377,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_from_above.setVisibility(View.GONE);
                 image_from_above_after.setVisibility(View.VISIBLE);
+                image_from_above_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_from_above.setVisibility(View.VISIBLE);
+                        image_from_above_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.above.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -264,6 +394,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 image_grid.setVisibility(View.GONE);
                 image_grid_after.setVisibility(View.VISIBLE);
+                image_grid_after.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        image_grid.setVisibility(View.VISIBLE);
+                        image_grid_after.setVisibility(View.GONE);
+                        Intent intent = new Intent(MainActivity.this, com.example.loopstudios.listActivity.arcade.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
     }

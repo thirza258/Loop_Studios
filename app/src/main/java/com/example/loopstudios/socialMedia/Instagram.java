@@ -17,6 +17,6 @@ public class Instagram extends AppCompatActivity {
         setContentView(R.layout.activity_instagram);
 
         socialMedia = findViewById(R.id.socialMedia);
-        socialMedia.loadUrl("https://www.instagram.com/thirzq/");
+        socialMedia.loadUrl("https://www.instagram.com/thirzq");
     }
 }

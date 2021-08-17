@@ -2,16 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.loopstudios">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoopStudios">
-        <activity android:name=".socialMedia.Twitter"></activity>
+        <activity android:name=".listActivity.above"></activity>
+        <activity android:name=".listActivity.fisheye" />
+        <activity android:name=".listActivity.beach" />
+        <activity android:name=".listActivity.burger" />
+        <activity android:name=".socialMedia.Twitter" />
         <activity android:name=".socialMedia.Pinterest" />
         <activity android:name=".socialMedia.Facebook" />
         <activity android:name=".socialMedia.Instagram" />
