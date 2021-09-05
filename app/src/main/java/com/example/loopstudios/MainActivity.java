@@ -1,5 +1,6 @@
 package com.example.loopstudios;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.LinearLayoutCompat;
 
@@ -23,6 +24,11 @@ import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.loopstudios.hamburger.About;
+import com.example.loopstudios.hamburger.Careers;
+import com.example.loopstudios.hamburger.Event;
+import com.example.loopstudios.hamburger.Product;
+import com.example.loopstudios.hamburger.Support;
 import com.example.loopstudios.listActivity.above;
 import com.example.loopstudios.listActivity.aot;
 import com.example.loopstudios.listActivity.arcade;
@@ -41,6 +47,8 @@ import com.example.loopstudios.socialMedia.Facebook;
 import com.example.loopstudios.socialMedia.Instagram;
 import com.example.loopstudios.socialMedia.Pinterest;
 import com.example.loopstudios.socialMedia.Twitter;
+
+import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -75,10 +83,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_LAYOUT_STABLE;
-        decorView.setSystemUiVisibility(uiOptions);
 
         initView();
         socialmedia();
@@ -86,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
         hamburger();
         //TODO: bug on landscape
 
+        logo2.setVisibility(View.VISIBLE);
 
     }
 
@@ -425,6 +430,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
+
+        careers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Careers.class);
+                startActivity(intent);
+            }
+        });
+
+        events.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Event.class);
+                startActivity(intent);
+            }
+        });
+
+        products.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Product.class);
+                startActivity(intent);
+            }
+        });
+
+        support.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Support.class);
+                startActivity(intent);
+            }
+        });
+
 
         see_all.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -461,8 +506,48 @@ public class MainActivity extends AppCompatActivity {
                 arrow_up.setVisibility(View.GONE);
             }
         });
+
+
     }
 
+    @Override
+    public void onConfigurationChanged(@NonNull @NotNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            see_all.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d(TAG, "onClick: Started");
+
+                    see_all.setVisibility(View.GONE);
+                    relaot.setVisibility(View.VISIBLE);
+                    relbeach.setVisibility(View.VISIBLE);
+                    reldate.setVisibility(View.VISIBLE);
+                    relnoragami.setVisibility(View.VISIBLE);
+                    relsao.setVisibility(View.VISIBLE);
+                    relgradient.setVisibility(View.VISIBLE);
+                    relcoca.setVisibility(View.VISIBLE);
+                    relburger.setVisibility(View.VISIBLE);
+                    arrow_up.setVisibility(View.VISIBLE);
+                }
+            });
+        }
+
+        else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            see_all.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d(TAG, "onClick: Started");
+
+                    linear10.setVisibility(View.VISIBLE);
+                    linear11.setVisibility(View.VISIBLE);
+                }
+            });
+        }
+
+
+    }
 
     public void initView() {
         Log.d(TAG, "initView: Started");
@@ -578,5 +663,6 @@ public class MainActivity extends AppCompatActivity {
         image_sao_after = findViewById(R.id.image_sao_after);
 
     }
+
 
 }
